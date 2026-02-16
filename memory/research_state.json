@@ -24,31 +24,10 @@
       "counterevidence": []
     }
   ],
-  "hypotheses": [],
   "notable_events": [
-    {
-      "date": "2026-02-09",
-      "description": "MegaETH mainnet launch with Streaming EVM",
-      "category": "Execution",
-      "impact": "high"
-    },
-    {
-      "date": "2026-02",
-      "description": "Solana Alpenglow consensus upgrade announced",
-      "category": "Consensus",
-      "impact": "high"
-    },
-    {
-      "date": "2026-02",
-      "description": "Solana Firedancer validator client full release",
-      "category": "Client Architecture",
-      "impact": "medium"
-    }
+    {"date": "2026-02-09", "description": "MegaETH mainnet launch with Streaming EVM", "category": "Execution", "impact": "high"},
+    {"date": "2026-02", "description": "Solana Alpenglow consensus upgrade announced", "category": "Consensus", "impact": "high"},
+    {"date": "2026-02", "description": "Solana Firedancer validator client full release", "category": "Client Architecture", "impact": "medium"}
   ],
-  "watchlist": [
-    "Alpenglow implementation timeline and real-world performance",
-    "Firedancer adoption and network effects",
-    "MegaETH TVL and developer adoption",
-    "Sui S2 platform launch details"
-  ]
+  "watchlist": ["Alpenglow implementation timeline", "Firedancer adoption", "MegaETH ecosystem growth", "Sui S2 platform"]
 }
