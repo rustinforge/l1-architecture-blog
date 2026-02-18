@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-02-17T03:30:00Z",
+  "last_scan": "2026-02-18T02:40:00Z",
   "tracked_l1s": ["ethereum", "solana", "avalanche", "near", "algorand", "aptos", "sui", "celestia", "polkadot"],
   "trends": [
     {
@@ -29,9 +29,17 @@
       "velocity": 0.9,
       "evidence": ["Ethereum L1-zkEVM roadmap with EIP-8025", "Six workstreams: consensus specs, prover infrastructure, zkVM APIs", "Feb 11 L1-zkEVM workshop completed"],
       "counterevidence": ["Proving centralization concerns", "Trusted setup requirements"]
+    },
+    {
+      "description": "Encrypted/anonymized mempools addressing MEV extraction and censorship",
+      "confidence": 0.8,
+      "velocity": 0.7,
+      "evidence": ["Flashnet: network-level anonymity for transaction submission", "MEV + censorship resistance in single primitive", "Native account abstraction support"],
+      "counterevidence": ["New attack vectors in anonymity protocols", "Potential latency increases", "Regulatory uncertainty"]
     }
   ],
   "notable_events": [
+    {"date": "2026-02-18", "description": "Flashnet encrypted mempool protocol announced by Flashbots", "category": "MEV/Privacy", "impact": "high"},
     {"date": "2026-02-17", "description": "Ethereum L1-zkEVM validation revolution published", "category": "Consensus", "impact": "critical"},
     {"date": "2026-02-11", "description": "Ethereum L1-zkEVM workshop completed", "category": "Consensus", "impact": "high"},
     {"date": "2026-02-09", "description": "MegaETH mainnet launch with Streaming EVM", "category": "Execution", "impact": "high"},
@@ -39,6 +47,7 @@
     {"date": "2026-02", "description": "Solana Firedancer validator client full release", "category": "Client Architecture", "impact": "medium"}
   ],
   "watchlist": [
+    "Flashnet mainnet deployment and wallet integrations",
     "EIP-8025 final specification and testnet deployment",
     "Prover network architecture and decentralization",
     "Ethereum Glamsterdam/Hegota hard fork timelines",
