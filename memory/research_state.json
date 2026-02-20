@@ -1,56 +1,63 @@
 {
-  "last_scan": "2026-02-19T02:45:00Z",
+  "last_scan": "2026-02-20T02:45:00Z",
   "scan_type": "DEEP_L1_RESEARCH_CYCLE",
-  "tracked_l1s": ["ethereum", "solana", "avalanche", "near", "algorand", "aptos", "sui", "celestia", "polkadot", "megaeth"],
+  "tracked_l1s": ["ethereum", "solana", "avalanche", "near", "algorand", "aptos", "sui", "celestia", "polkadot", "megaeth", "monad"],
   "trends": [
     {
       "description": "L1 consensus protocols moving toward sub-second finality with enhanced fault tolerance models",
-      "confidence": 0.88,
+      "confidence": 0.90,
       "velocity": 0.85,
-      "evidence": ["Solana Alpenglow reduces finality from 12s to 100-150ms", "20+20 resilience model (20% malicious + 20% offline)", "Target: Agave 4.1 Q3 2026"],
+      "evidence": ["Solana Alpenglow reduces finality from 12s to 100-150ms (80x improvement)", "20+20 resilience model (20% malicious + 20% offline)", "Agave master branch now accessible for private testing", "Target: Agave 4.1 Q3 2026"],
       "counterevidence": []
     },
     {
       "description": "ZK-based validation replacing execution-based validation at Layer 1 - fundamental scalability paradigm shift",
-      "confidence": 0.92,
+      "confidence": 0.95,
       "velocity": 0.95,
-      "evidence": ["Ethereum L1-zkEVM roadmap with EIP-8025", "Six workstreams: consensus specs, prover infrastructure, zkVM APIs", "Feb 11 L1-zkEVM workshop completed", "Glamsterdam hard fork mid-2026 for proving windows", "zkVM proofs ~300KB target", "EF dedicated zkEVM team active"],
-      "counterevidence": ["Proving centralization concerns", "Trusted setup requirements", "Real-time proving latency challenges"]
+      "evidence": ["Ethereum L1-zkEVM roadmap with EIP-8025 (Optional Execution Proofs)", "Six workstreams active: consensus specs, prover infrastructure, zkVM APIs", "Feb 11 L1-zkEVM workshop completed", "zkAttesters can sync in minutes without full EL state", "Glamsterdam hard fork mid-2026 for proving windows", "zkVM proofs ~300KB target", "EF dedicated zkEVM team active"],
+      "counterevidence": ["Proving centralization concerns", "12 GPU requirement raises home validator barriers", "Trusted setup requirements for some proof systems"]
     },
     {
-      "description": "Encrypted/anonymized mempools at network layer addressing MEV extraction and censorship",
-      "confidence": 0.85,
-      "velocity": 0.80,
-      "evidence": ["Flashnet: low-latency anonymous broadcast protocol", "Network-level anonymity complements FOCIL", "BuilderNet integration for permissionless block building", "Native account abstraction support"],
-      "counterevidence": ["New attack vectors in anonymity protocols", "Potential latency increases", "Regulatory uncertainty"]
-    },
-    {
-      "description": "Validator client diversity becoming critical infrastructure requirement",
+      "description": "Network-level anonymity protocols complementing on-chain privacy for censorship resistance",
       "confidence": 0.88,
-      "velocity": 0.75,
-      "evidence": ["Solana Firedancer achieving 1M+ TPS in testing", "C implementation for performance/isolation", "Tile-based architecture for bug isolation", "Full production release 2026", "Frankendancer hybrid already deployed"],
+      "velocity": 0.85,
+      "evidence": ["Flashnet: low-latency anonymous broadcast protocol (Feb 17)", "Lower latency than TOR/Nym alternatives", "BuilderNet integration for permissionless block building", "Native account abstraction mempool support", "Complements FOCIL for censorship resistance"],
+      "counterevidence": ["New attack vectors in anonymity protocols", "Bandwidth overhead considerations", "Regulatory uncertainty"]
+    },
+    {
+      "description": "Validator client diversity becoming critical infrastructure requirement with production-grade alternatives",
+      "confidence": 0.90,
+      "velocity": 0.80,
+      "evidence": ["Solana Firedancer achieving 1M+ TPS in testing", "C implementation for performance/isolation", "30% mainnet stake support (300+ validators)", "FireBAM oracle-based block engine in testing", "Tile-based architecture for bug isolation", "Full production release 2026", "Frankendancer hybrid already deployed"],
       "counterevidence": ["Complexity of multi-client coordination"]
     },
     {
       "description": "Real-time execution layer emerging as next scaling frontier beyond batch rollups",
-      "confidence": 0.85,
-      "velocity": 0.70,
-      "evidence": ["MegaETH launched Feb 9 2026 with 55K verified TPS", "Streaming EVM targeting 100K TPS", "10ms block times", "Modular execution settlement separation", "TVL reached $66M within days"],
-      "counterevidence": ["Sustainability of high TPS claims under real load", "Centralization concerns for real-time chains"]
+      "confidence": 0.88,
+      "velocity": 0.75,
+      "evidence": ["MegaETH mainnet launched Feb 9 2026", "Verified 35K-55K TPS (reports vary)", "Streaming EVM targeting 100K TPS theoretical", "10ms block times", "$66M TVL within 1 week", "Modular execution/settlement separation"],
+      "counterevidence": ["Sustainability of TPS claims under sustained load needs verification", "Centralization concerns for real-time chains"]
     },
     {
-      "description": "Data availability sampling (DAS) achieving production deployment",
-      "confidence": 0.90,
-      "velocity": 0.65,
-      "evidence": ["Ethereum Fusaka upgrade (late 2025) shipped PeerDAS", "Blob capacity doubled from 3 to 6-9", "Validator data sampling now active", "Reduced L2 fees significantly"],
+      "description": "Data availability sampling (DAS) achieving production deployment with measurable impact",
+      "confidence": 0.92,
+      "velocity": 0.70,
+      "evidence": ["Ethereum Fusaka upgrade (Dec 3, 2025) shipped PeerDAS", "Blob capacity increased from 3 to 6-9 per block", "Validator data sampling now active", "Significant L2 fee reductions observed", "Celestia 100+ rollups, Fibre Blockspace 1Tbps upgrade"],
       "counterevidence": []
     },
     {
-      "description": "Transaction inclusion enforcement mechanisms (FOCIL) targeting proposer-builder separation centralization",
-      "confidence": 0.75,
+      "description": "Transaction inclusion enforcement mechanisms targeting proposer-builder separation centralization",
+      "confidence": 0.82,
+      "velocity": 0.65,
+      "evidence": ["FOCIL (Fork-Choice Enforced Inclusion Lists) proposed for Hegota upgrade", "EIP-7805 specification active", "Thomas Thiery (soispoke) as primary architect", "Decentralized validators enforce transaction inclusion", "Advancing for upcoming Hegota fork (Feb 19 confirmation)"],
+      "counterevidence": ["Complexity of fork-choice rule modifications", "Latency increase from public mempool requirement"]
+    },
+    {
+      "description": "Protocol governance restructuring for coordinated scaling and security development",
+      "confidence": 0.78,
       "velocity": 0.60,
-      "evidence": ["FOCIL (Fork-Choice Enforced Inclusion Lists) proposed for Hegota upgrade", "Thomas Thiery as primary architect", "Decentralized validators enforce transaction inclusion"],
-      "counterevidence": ["Complexity of fork-choice rule modifications"]
+      "evidence": ["Ethereum Foundation reorganizes into three tracks (Feb 19)", "Led by Barnabé Monnot and Matt Garnett", "Native account abstraction track (EIP-7701, EIP-8141)", "Execution performance + networking + consensus interdependence recognized", "Gas limit increase path toward 100M via EIP-7928"],
+      "counterevidence": ["Organizational changes may introduce execution delays"]
     }
   ],
   "high_delta_findings": [
@@ -61,58 +68,43 @@
       "ecosystem_impact": 0.90,
       "evidence_strength": 0.95,
       "category": "Consensus/Execution",
-      "description": "Fundamental shift from re-execution to proof verification at L1. Six parallel workstreams active. Moves EF strategy away from rollup-centrism back to L1 scaling. Glamsterdam hard fork (mid-2026) critical path for proving windows.",
-      "key_references": ["bankless.com/the-technical-leaps-hardening-ethereums-zkevm-future", "Feb 11 L1-zkEVM workshop"],
-      "confidence": "high"
+      "description": "Fundamental shift from re-execution to proof verification at L1. EIP-8025 introduces 'Optional Execution Proofs' where validators can opt into zkAttester mode. Enables syncing in minutes without execution layer state. Six parallel workstreams active. EF dedicated team. Glamsterdam hard fork (mid-2026) critical path for proving windows.",
+      "key_references": ["bankless.com", "blockonomi.com", "Feb 11 L1-zkEVM workshop"],
+      "confidence": "high",
+      "first_seen": "2026-02-17"
     },
     {
       "title": "Flashnet Network-Anonymized Mempools",
-      "delta_score": 0.82,
+      "delta_score": 0.86,
       "novelty": 0.90,
-      "ecosystem_impact": 0.75,
-      "evidence_strength": 0.80,
+      "ecosystem_impact": 0.80,
+      "evidence_strength": 0.88,
       "category": "MEV/Privacy",
-      "description": "Low-latency anonymous broadcast protocol from Flashbots. Network-level anonymity complements FOCIL. Bridges SUAVE vision toward permissionless block building.",
+      "description": "Low-latency anonymous broadcast protocol from Flashbots (published Feb 17). Achieves lower latency than TOR/Nym alternatives. Network-level anonymity complements on-chain privacy (Railgun/Privacy Pools). Bridges SUAVE vision toward permissionless block building. Supports account abstraction mempools.",
       "key_references": ["writings.flashbots.net/network-anonymized-mempools"],
-      "confidence": "high"
+      "confidence": "high",
+      "first_seen": "2026-02-17"
+    },
+    {
+      "title": "Solana Alpenglow Consensus Protocol Milestone",
+      "delta_score": 0.85,
+      "novelty": 0.85,
+      "ecosystem_impact": 0.82,
+      "evidence_strength": 0.88,
+      "category": "Consensus",
+      "description": "80x finality improvement: 12s → 100-150ms confirmed. 20%+20% fault tolerance model. Agave master branch now accessible for private cluster testing (major milestone). Vote Account V4 prerequisite landed in Agave 3.1. SIMD-123 fee routing groundwork in progress. Target: Agave 4.1 release Q3 2026.",
+      "key_references": ["chainflowsol.substack.com (Feb 13)", "nasdaq.com", "validator discussions"],
+      "confidence": "high",
+      "first_seen": "2026-02-13"
     },
     {
       "title": "MegaETH Real-Time Streaming EVM Mainnet",
-      "delta_score": 0.82,
+      "delta_score": 0.84,
       "novelty": 0.75,
-      "ecosystem_impact": 0.75,
+      "ecosystem_impact": 0.76,
       "evidence_strength": 0.95,
       "category": "Execution Layer",
-      "description": "Launched Feb 9, 2026. Verified 55K TPS stress test, targeting 100K. 10ms block times. Modular architecture separating execution from settlement.",
-      "key_references": ["cryptovalleyjournal.com", "megaeth mainnet verified metrics"],
-      "confidence": "high"
-    },
-    {
-      "title": "Solana Alpenglow Consensus Protocol",
-      "delta_score": 0.83,
-      "novelty": 0.85,
-      "ecosystem_impact": 0.80,
-      "evidence_strength": 0.85,
-      "category": "Consensus",
-      "description": "80x finality improvement: 12s → 100-150ms. 20%+20% fault tolerance model. Targeting institutional/HFT use cases. Epic: Agave 4.1 Q3 2026.",
-      "key_references": ["chainflowsol.substack.com", "Solana validator discussions"],
-      "confidence": "high"
-    }
-  ],
-  "notable_events": [
-    {"date": "2026-02-19", "description": "Ethereum Protocol restructures into three tracks for scaling/security goals (Blockonomi)", "category": "Governance", "impact": "medium"},
-    {"date": "2026-02-18", "description": "Flashnet encrypted mempool protocol full technical publication", "category": "MEV/Privacy", "impact": "high", "delta_score": 0.82},
-    {"date": "2026-02-17", "description": "Ethereum L1-zkEVM validation roadmap detailed analysis published (Bankless)", "category": "Consensus", "impact": "critical", "delta_score": 0.93},
-    {"date": "2026-02-13", "description": "Ethereum Foundation leadership transition: Tomasz Stanczak stepping down; Bastian Aue promoted", "category": "Governance", "impact": "medium"},
-    {"date": "2026-02-11", "description": "Ethereum L1-zkEVM workshop completed - EIP-8025 discussions", "category": "Consensus", "impact": "high"},
-    {"date": "2026-02-09", "description": "MegaETH mainnet launch with Streaming EVM", "category": "Execution", "impact": "high", "delta_score": 0.82, "verified_tps": 55000},
-    {"date": "2026-02", "description": "Solana Alpenglow accessible from Agave master branch for private cluster testing", "category": "Consensus", "impact": "high"},
-    {"date": "2025-Q4", "description": "Ethereum Fusaka shipped PeerDAS + doubled blob capacity", "category": "Data Availability", "impact": "high", "evidence": "Active on mainnet"}
-  ],
-  "watchlist": [
-    "Flashnet mainnet deployment and wallet integrations",
-    "EIP-8025 final specification and testnet deployment",
-    "Ethereum prover network architecture and decentralization analysis",
-    "Glamsterdam hard fork timeline (mid-2026)",
-    "Solana Alpenglow: Agave 4.1 release Q3 2026",
-    "Solana Firedancer mainnet adoption"
+      "description": "Mainnet launched Feb 9, 2026. Verified stress test performance: 35K-55K TPS (source-dependent). Theoretical capacity 100K TPS. 10ms block times achieved. TVL reached $66M within one week. Modular architecture with execution/settlement separation.",
+      "key_references": ["cryptovalleyjournal.com", "outlookindia.com", "kucoin.com"],
+      "confidence": "high",
+      "first
