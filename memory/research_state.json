@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-02-20T02:45:00Z",
+  "last_scan": "2026-02-21T02:57:00Z",
   "scan_type": "DEEP_L1_RESEARCH_CYCLE",
   "tracked_l1s": ["ethereum", "solana", "avalanche", "near", "algorand", "aptos", "sui", "celestia", "polkadot", "megaeth", "monad"],
   "trends": [
@@ -75,15 +75,39 @@
     },
     {
       "title": "Flashnet Network-Anonymized Mempools",
-      "delta_score": 0.86,
-      "novelty": 0.90,
-      "ecosystem_impact": 0.80,
-      "evidence_strength": 0.88,
+      "delta_score": 0.91,
+      "novelty": 0.95,
+      "ecosystem_impact": 0.85,
+      "evidence_strength": 0.95,
       "category": "MEV/Privacy",
-      "description": "Low-latency anonymous broadcast protocol from Flashbots (published Feb 17). Achieves lower latency than TOR/Nym alternatives. Network-level anonymity complements on-chain privacy (Railgun/Privacy Pools). Bridges SUAVE vision toward permissionless block building. Supports account abstraction mempools.",
-      "key_references": ["writings.flashbots.net/network-anonymized-mempools"],
+      "description": "Revolutionary anonymous broadcast protocol achieving lower latency than TOR/Nym. TEE-based liveness with cryptographic anonymity. Complements BuilderNet for permissionless block building. Supports account abstraction mempools. Event horizon for distributed block building.",
+      "key_references": ["writings.flashbots.net/network-anonymized-mempools", "Technical protocol specification", "BuilderNet integration plans"],
       "confidence": "high",
       "first_seen": "2026-02-17"
+    },
+    {
+      "title": "Ethereum Hegota Verkle Trees + State Expiry",
+      "delta_score": 0.88,
+      "novelty": 0.85,
+      "ecosystem_impact": 0.90,
+      "evidence_strength": 0.90,
+      "category": "State Management",
+      "description": "Vitalik's roadmap implements Period 1 fork with hexary Patricia tree frozen and new Verkle tree for edits. Period 2 implements full state expiry with ~20-50GB flat state size. EIP-7736 proposes leaf-level state expiry in Verkle trees.",
+      "key_references": ["Vitalik's HackMD roadmap", "EIP-7736 specification", "Hegota upgrade plans"],
+      "confidence": "high",
+      "first_seen": "2026-02-21"
+    },
+    {
+      "title": "MonadBFT Production Deployment",
+      "delta_score": 0.78,
+      "novelty": 0.80,
+      "ecosystem_impact": 0.75,
+      "evidence_strength": 0.80,
+      "category": "Consensus",
+      "description": "MonadBFT achieves 10,000+ tx/s with sub-second finality (800ms for 2 slots). Features linear communication complexity vs traditional quadratic BFT, tail-forking resistance via timeout certificates and reproposal mechanism.",
+      "key_references": ["DAIC Capital technical analysis", "Protocol specifications"],
+      "confidence": "high",
+      "first_seen": "2026-02-21"
     },
     {
       "title": "Solana Alpenglow Consensus Protocol Milestone",
